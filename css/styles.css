@@ -40,8 +40,7 @@ main {
 .container {
     width: 1158px;
     margin: 0;
-    padding-left: 15px;
-    padding-right: 15px
+    padding: 0 15px;
 }
 
 /* Header */
@@ -82,6 +81,7 @@ main {
 
 .header-nav {
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .header-nav:hover,
@@ -125,7 +125,7 @@ main {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.header-container {
+.header .container {
     display: flex;
 }
 
@@ -227,9 +227,9 @@ main {
     color: #2e2f42;
     text-transform: capitalize;
     margin-right: 639px;
-        margin-left: 639px;
-        margin-bottom: 72px;
-        margin-top: 120px;
+    margin-left: 639px;
+    margin-bottom: 72px;
+    margin-top: 120px;
 }
 
 .third-sec-item {
@@ -280,10 +280,10 @@ main {
     color: #2e2f42;
     text-transform: capitalize;
     margin-right: 611px;
-        margin-left: 611px;
-        margin-bottom: 72px;
-        margin-top: 120px;
-       
+    margin-left: 611px;
+    margin-bottom: 72px;
+    margin-top: 120px;
+
 }
 
 .fourth-sec-header {
@@ -303,7 +303,7 @@ main {
 }
 
 .first-row {
-margin-right: 156px;
+    margin-right: 156px;
     margin-left: 156px;
     margin-bottom: 48px;
     max-width: 360px;
@@ -312,8 +312,8 @@ margin-right: 156px;
 }
 
 .second-row {
-display: flex;
-margin-right: 156px;
+    display: flex;
+    margin-right: 156px;
     margin-left: 156px;
     margin-bottom: 120px;
     gap: 24px;
@@ -343,14 +343,24 @@ margin-right: 156px;
     color: #f4f4fd;
 }
 
-.footer-container{
-max-width: 264px;
+.footer {
+    border-bottom: 1px solid #e7e9fc;
+    padding: 100px 0;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+
+.footer .container {
+
+    max-width: 264px;
     margin-left: 149px;
     margin-bottom: 101px;
     margin-top: 100px;
     padding-bottom: 15px;
+
 }
 
-.footer {
-    border-bottom: 1px solid #e7e9fc;
+.footer a {
+    display: inline-block;
+    margin-bottom: 16px;
 }
