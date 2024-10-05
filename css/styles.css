@@ -168,6 +168,7 @@ main {
     margin-left: 636px;
     min-width: 169px;
     border-radius: 4px;
+    height: 56px;
 }
 
 .first-sec-button:hover,
