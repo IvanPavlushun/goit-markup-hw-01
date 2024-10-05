@@ -23,6 +23,27 @@ ol {
     padding-left: 0;
 }
 
+img {
+    display: block;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    width: 1158px;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
 /* Header */
 .logo {
     font-family: "Raleway", sans-serif;
@@ -33,6 +54,8 @@ ol {
     text-transform: uppercase;
     color: #4d5ae5;
     line-height: 1.17;
+    margin-right: 76px;
+    margin-left: 156px;
 }
 
 .logo-first-part {
@@ -51,6 +74,10 @@ ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+    margin-right: 332px;
 }
 
 .header-nav {
@@ -70,6 +97,13 @@ ol {
     font-style: normal;
 }
 
+.header-data {
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+    margin-right: 156px;
+}
+
 .header-link {
     font-weight: 400;
     font-size: 16px;
@@ -87,9 +121,24 @@ ol {
     color: #404bbf;
 }
 
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 /* First section */
 .first-sec {
     background: #2e2f42;
+    padding: 188px 0;
+
 }
 
 .first-sec-header {
@@ -99,6 +148,10 @@ ol {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin-right: 472px;
+    margin-left: 472px;
+    margin-bottom: 48px;
 }
 
 .first-sec-button {
@@ -108,6 +161,11 @@ ol {
     font-weight: 500;
     cursor: pointer;
     background: #4d5ae5;
+    display: block;
+    border: none;
+    padding: 16px 32px;
+    margin-right: 636px;
+    margin-left: 636px;
 }
 
 .first-sec-button:hover,
@@ -136,12 +194,21 @@ ol {
     color: #2e2f42;
 }
 
-.second-sec-item {
+.second-sec-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+.second-sec-container {
+    margin: 120px 156px;
+}
+
+.second-sec-item {
+    display: flex;
+    gap: 24px;
 }
 
 /* Third section */
@@ -159,6 +226,10 @@ ol {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-right: 639px;
+        margin-left: 639px;
+        margin-bottom: 72px;
+        margin-top: 120px;
 }
 
 .third-sec-item {
@@ -172,6 +243,7 @@ ol {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .third-sec-text {
@@ -181,6 +253,21 @@ ol {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    margin-bottom: 32px;
+}
+
+.third-sec-list {
+    margin-right: 156px;
+    margin-left: 156px;
+    margin-bottom: 120px;
+    margin-top: 232px;
+    max-width: 264px;
+    display: flex;
+    gap: 24px;
+}
+
+.third-sec-img {
+    margin-bottom: 32px;
 }
 
 /* Fourth section */
@@ -192,6 +279,11 @@ ol {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-right: 611px;
+        margin-left: 611px;
+        margin-bottom: 72px;
+        margin-top: 120px;
+       
 }
 
 .fourth-sec-header {
@@ -208,6 +300,24 @@ ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+.first-row {
+margin-right: 156px;
+    margin-left: 156px;
+    margin-bottom: 48px;
+    max-width: 360px;
+    display: flex;
+    gap: 24px;
+}
+
+.second-row {
+display: flex;
+margin-right: 156px;
+    margin-left: 156px;
+    margin-bottom: 120px;
+    gap: 24px;
+    max-width: 360px;
 }
 
 /* Footer */
@@ -233,38 +343,14 @@ ol {
     color: #f4f4fd;
 }
 
-body {
-
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-
+.footer-container{
+max-width: 264px;
+    margin-left: 149px;
+    margin-bottom: 101px;
+    margin-top: 100px;
+    padding-bottom: 15px;
 }
 
-main {
-    flex-grow: 1;
+.footer {
+    border-bottom: 1px solid #e7e9fc;
 }
-
-
-
-
-.container-logo {
-    display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 0px;
-    background-color: aquamarine;
-   
-}
-
-.nav-container {
-display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 40px;
-background-color: aquamarine;
-}
-
-
