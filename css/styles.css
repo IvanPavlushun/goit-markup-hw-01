@@ -1,7 +1,26 @@
 body {
     color: #434455;
     font-family: "Roboto", sans-serif;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 /* Header */
@@ -143,7 +162,7 @@ body {
 }
 
 .third-sec-item {
-background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .third-sec-header {
@@ -206,10 +225,46 @@ background-color: #FFFFFF;
 
 .logo-first-part-fotter {
     font-family: "Raleway", sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.16667;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #f4f4fd;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f4f4fd;
 }
+
+body {
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main {
+    flex-grow: 1;
+}
+
+
+
+
+.container-logo {
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 0px;
+    background-color: aquamarine;
+   
+}
+
+.nav-container {
+display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+background-color: aquamarine;
+}
+
+
