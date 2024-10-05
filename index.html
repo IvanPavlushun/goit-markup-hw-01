@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet"
-        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +54,7 @@
         <!-- First section -->
 
         <section class="first-sec">
-            <div class="first-sec-container" class="container">
+            <div class="container">
                 <h1 class="first-sec-header">Effective Solutions for Your Business</h1>
                 <button class="first-sec-button" type="button"><span class="button-text">Order Service</span></button>
             </div>
@@ -67,18 +65,18 @@
 
         <section class="second-sec">
 
-            <div class="second-sec-container" class="container">
+            <div class="container">
 
-                <h2> . </h2>
+                <h2 class="visually-hidden"> . </h2>
 
                 <ul class="second-sec-item">
-                    <li>
+                    <li class="second-sec-item">
                         <h3 class="second-sec-header">Strategy</h3>
                         <p class="second-sec-text">Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.</p>
                     </li>
 
-                    <li>
+                    <li class="second-sec-item">
                         <h3 class="second-sec-header">Punctuality</h3>
                         <p class="second-sec-text">Bring the key message to the brand's audience for the best price
                             within
@@ -86,7 +84,7 @@
                             time.</p>
                     </li>
 
-                    <li>
+                    <li class="second-sec-item">
                         <h3 class="second-sec-header">Diligence</h3>
                         <p class="second-sec-text">Research and confirm brands that present the strongest digital
                             growth
@@ -95,7 +93,7 @@
                         </p>
                     </li>
 
-                    <li>
+                    <li class="second-sec-item">
                         <h3 class="second-sec-header">Technologies</h3>
                         <p class="second-sec-text">Design practice focused on digital experiences. We bring forth a
                             deep
@@ -118,28 +116,37 @@
                 <ul class="third-sec-list">
                     <li class="third-sec-item">
                         <img class="third-sec-img" src="./images/Mark.jpg" alt="Mark Guerrero" width="264" height="260">
-                        <h3 class="third-sec-header">Mark Guerrero</h3>
-                        <p class="third-sec-text">Product Designer</p>
+                        <div class="worker-conteiner">
+                            <h3 class="third-sec-header">Mark Guerrero</h3>
+                            <p class="third-sec-text">Product Designer</p>
+                        </div>
                     </li>
 
                     <li class="third-sec-item">
                         <img class="third-sec-img" src="./images/Tom.jpg" alt="Tom Ford" width="264" height="260">
-                        <h3 class="third-sec-header">Tom Ford</h3>
-                        <p class="third-sec-text">Frontend Developer</p>
+                        <div class="worker-conteiner">
+                            <h3 class="third-sec-header">Tom Ford</h3>
+                            <p class="third-sec-text">Frontend Developer</p>
+                        </div>
                     </li>
 
                     <li class="third-sec-item">
                         <img class="third-sec-img" src="./images/Camila.jpg" alt="Camila Garcia" width="264"
                             height="260">
-                        <h3 class="third-sec-header">Camila Garcia</h3>
-                        <p class="third-sec-text">Marketing</p>
+                        <div class="worker-conteiner">
+                            <h3 class="third-sec-header">Camila Garcia</h3>
+                            <p class="third-sec-text">Marketing</p>
+                        </div>
+
                     </li>
 
                     <li class="third-sec-item">
                         <img class="third-sec-img" src="./images/Daniel.jpg" alt="Daniel Wilson" width="264"
                             height="260">
-                        <h3 class="third-sec-header">Daniel Wilson</h3>
-                        <p class="third-sec-text">UI Designer</p>
+                        <div class="worker-conteiner">
+                            <h3 class="third-sec-header">Daniel Wilson</h3>
+                            <p class="third-sec-text">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -154,52 +161,62 @@
 
                 <h2 class="fourth-sec-title">Our Portfolio</h2>
 
-                <ul>
-                    <div class="first-row">
-                        <li class="fourth-sec-item">
-                            <img class="fourth-sec-img" src="./images/Bankapp.jpg" alt="Banking App " width="360"
-                                height="300">
-                            <h3 class="fourth-sec-header">Banking App</h3>
-                            <p class="fourth-sec-text">App</p>
-                        </li>
+                <ul class="fourth-sec-list">
 
-                        <li class="fourth-sec-item">
-                            <img class="fourth-sec-img" src="./images/Cashlesspay.jpg" alt="Cashless Payment"
-                                width="360" height="300">
-                            <h3 class="fourth-sec-header">Cashless Payment</h3>
-                            <p class="fourth-sec-text">Marketing</p>
-                        </li>
+                    <li class="fourth-sec-item">
+                        <img class="fourth-sec-img" src="./images/Bankapp.jpg" alt="Banking App " width="360"
+                            height="300">
+                            <div class="project-conteiner">
+                        <h3 class="fourth-sec-header">Banking App</h3>
+                        <p class="fourth-sec-text">App</p>
+                        </div>
+                    </li>
 
-                        <li class="fourth-sec-item">
-                            <img class="fourth-sec-img" src="./images/Medapp.jpg" alt="Meditation App" width="360"
-                                height="300">
-                            <h3 class="fourth-sec-header">Meditation App</h3>
-                            <p class="fourth-sec-text">App</p>
-                        </li>
-                    </div>
+                    <li class="fourth-sec-item">
+                        <img class="fourth-sec-img" src="./images/Cashlesspay.jpg" alt="Cashless Payment" width="360"
+                            height="300">
+                            <div class="project-conteiner">
+                        <h3 class="fourth-sec-header">Cashless Payment</h3>
+                        <p class="fourth-sec-text">Marketing</p>
+                        </div>
+                    </li>
 
-                    <div class="second-row">
-                        <li class="fourth-sec-item">
-                            <img class="fourth-sec-img" src="./images/Taxser.jpg" alt="Taxi Service" width="360"
-                                height="300">
-                            <h3 class="fourth-sec-header">Taxi Service</h3>
-                            <p class="fourth-sec-text">Marketing</p>
-                        </li>
+                    <li class="fourth-sec-item">
+                        <img class="fourth-sec-img" src="./images/Medapp.jpg" alt="Meditation App" width="360"
+                            height="300">
+                            <div class="project-conteiner">
+                        <h3 class="fourth-sec-header">Meditation App</h3>
+                        <p class="fourth-sec-text">App</p>
+                        </div>
+                    </li>
 
-                        <li class="fourth-sec-item">
-                            <img class="fourth-sec-img" src="./images/Scrnill.jpg" alt="Screen Illustrations"
-                                width="360" height="300">
-                            <h3 class="fourth-sec-header">Screen Illustrations</h3>
-                            <p class="fourth-sec-text">Design</p>
-                        </li>
 
-                        <li class="fourth-sec-item">
-                            <img class="fourth-sec-img" src="./images/Onlcour.jpg" alt="Online Courses" width="360"
-                                height="300">
-                            <h3 class="fourth-sec-header">Online Courses</h3>
-                            <p class="fourth-sec-text">Marketing</p>
-                        </li>
-                    </div>
+                    <li class="fourth-sec-item">
+                        <img class="fourth-sec-img" src="./images/Taxser.jpg" alt="Taxi Service" width="360"
+                            height="300">
+                            <div class="project-conteiner">
+                        <h3 class="fourth-sec-header">Taxi Service</h3>
+                        <p class="fourth-sec-text">Marketing</p>
+                        </div>
+                    </li>
+
+                    <li class="fourth-sec-item">
+                        <img class="fourth-sec-img" src="./images/Scrnill.jpg" alt="Screen Illustrations" width="360"
+                            height="300">
+                            <div class="project-conteiner">
+                        <h3 class="fourth-sec-header">Screen Illustrations</h3>
+                        <p class="fourth-sec-text">Design</p>
+                        </div>
+                    </li>
+
+                    <li class="fourth-sec-item">
+                        <img class="fourth-sec-img" src="./images/Onlcour.jpg" alt="Online Courses" width="360"
+                            height="300">
+                            <div class="project-conteiner">
+                        <h3 class="fourth-sec-header">Online Courses</h3>
+                        <p class="fourth-sec-text">Marketing</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
