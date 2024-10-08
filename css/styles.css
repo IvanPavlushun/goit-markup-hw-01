@@ -43,6 +43,10 @@ main {
     padding: 0 15px;
 }
 
+svg {
+    fill: none;
+}
+
 /* Header */
 .logo {
     font-family: "Raleway", sans-serif;
@@ -376,7 +380,7 @@ main {
 }
 
 .icon {
-    fill: #f4f4fd;
+    fill:#f4f4fd;
 }
 
 .link:hover .icon {
