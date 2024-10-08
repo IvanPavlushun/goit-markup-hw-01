@@ -161,7 +161,7 @@ main {
     background-position: center center;
     background-size: cover;
     color: #fff;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1\ \(1\).jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Office.jpg);
     max-width: 1440px;
     margin: 0 auto;
 
@@ -263,7 +263,7 @@ main {
 }
 
 .second-sec-item {
-    idth: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4);
 }
 
 
@@ -454,13 +454,16 @@ main {
     width: 100%;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+ }
 .overlay:hover p {
     transform: translateY(0%);
 }
 
 .fourth-sec-item:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+        transform:translateY(0%);
 }
 
 /* Footer */
@@ -523,13 +526,12 @@ main {
 }
 
 .footer .social-links .link:hover {
-    background-color: #31D0AA;
+    background-color: #31d0aa;
 }
 
 .footer .social-links .link:focus {
-    background-color: #31D0AA;
+    background-color: #31d0aa;
 }
-
 .social-links .icon {
     fill: #fff;
 }
