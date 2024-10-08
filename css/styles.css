@@ -371,9 +371,6 @@ svg {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.third-sec .icon {
-    fill: #f4f4fd;
-}
 
 .social-links .link:hover {
     background-color: #404BBF;
