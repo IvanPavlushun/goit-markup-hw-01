@@ -375,7 +375,7 @@ main {
     background-color: #404BBF;
 }
 
-.social-links .icon {
+.icon {
     fill: #f4f4fd;
 }
 
@@ -570,3 +570,7 @@ main {
 .container-footer {
     margin-right: 120px;
 }
+
+.footer .icon {
+    fill: #f4f4fd;
+} 
