@@ -578,16 +578,7 @@ svg {
     fill: #f4f4fd;
 }
 
-.footer-button-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #fff;
-}
-
-.footer-button{
+.footer-button {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -599,13 +590,13 @@ svg {
     border-radius: 4px;
     border: 1px solid #ccc;
     width: 250px;
-    /* Фіксована ширина поля вводу */
 }
 
 
 .footer-button {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 8px 24px;
     background-color: #4d5ae5;
@@ -613,14 +604,34 @@ svg {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 24px;
+    min-width: 165px;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
 }
 
 
-.footer-form .form-input {
+.footer-form-input {
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
     height: 40px;
+    background-color: transparent;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        padding-left: 16px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-form-input::placeholder{
+    color: #ffffff;
 }
 
 .label-text {
@@ -633,15 +644,11 @@ svg {
 }
 
 .footer-form {
-    display: inline;
+    display: flex;
     flex-direction: row;
+    gap: 24px;
 }
 
-.footer-container-form {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
 
 
 /* Overlay */
@@ -654,6 +661,7 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -661,7 +669,8 @@ svg {
 
     opacity: 0;
     pointer-events: none;
-    transition: opacity 250ms ease-in-out;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -670,6 +679,14 @@ svg {
 }
 
 .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    min-height: 584px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
     border-radius: 4px;
@@ -679,6 +696,7 @@ svg {
     overflow-y: auto;
 }
 
+
 .modal-text {
     font-weight: 500;
     font-size: 16px;
@@ -686,13 +704,15 @@ svg {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 16px;
 }
 
 .modal-icon {
     fill: #2e2f42;
 }
 
-.modal .modal-link {
+.exit-button{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -707,15 +727,15 @@ svg {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-link:hover {
+.exit-button:hover {
     background-color: #404BBF;
 }
 
-.modal-link:focus {
+.exit-button:focus {
     background-color: #404BBF;
 }
 
-.modal-link:hover .modal-icon {
+.exit-button:hover .modal-icon {
     fill: #ffffff;
 }
 
@@ -760,11 +780,11 @@ svg {
     position: absolute;
     display: flex;
     align-items: center;
-        justify-content: center;
-    top:34px;
-        left: 16px;
-        width: 18px;
-        height: 18px;
+    justify-content: center;
+    top: 34px;
+    left: 16px;
+    width: 18px;
+    height: 18px;
 }
 
 .input {
@@ -787,9 +807,9 @@ svg {
     flex-direction: row;
     gap: 10px;
     border-radius: 4px;
-        padding: 16px 32px;
-        width: 169px;
-        height: 56px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
     border: none;
     background: #4d5ae5;
     margin-left: auto;
@@ -823,13 +843,13 @@ svg {
 
 .form-field {
     display: flex;
-        align-items: center;
-        gap: 4px;
+    align-items: center;
+    gap: 4px;
 }
 
 .modal-radio-text {
     line-height: 1.33333;
-        text-decoration: underline;
-        text-decoration-skip-ink: none;
-        color: #4d5ae5;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
 }
