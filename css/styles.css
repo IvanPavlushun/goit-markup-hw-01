@@ -607,11 +607,11 @@ svg {
     margin-left: 24px;
     min-width: 165px;
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        text-align: center;
-        color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
 }
 
 
@@ -622,15 +622,15 @@ svg {
     height: 40px;
     background-color: transparent;
     font-weight: 400;
-        font-size: 12px;
-        line-height: 2;
-        letter-spacing: 0.04em;
-        color: #ffffff;
-        padding-left: 16px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.footer-form-input::placeholder{
+.footer-form-input::placeholder {
     color: #ffffff;
 }
 
@@ -649,6 +649,10 @@ svg {
     gap: 24px;
 }
 
+.footer-icon {
+    margin-left: 16px;
+
+}
 
 
 /* Overlay */
@@ -686,6 +690,7 @@ svg {
     width: 408px;
     min-height: 584px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
 
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
@@ -707,11 +712,12 @@ svg {
     margin-bottom: 16px;
 }
 
-.modal-icon {
+.exit-button .modal-icon {
     fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.exit-button{
+.exit-button {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -720,22 +726,32 @@ svg {
     margin-bottom: 24px;
     margin-top: 24px;
     right: 24px;
+    top: 24px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
     background-color: #E7E9FC;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
 }
 
 .exit-button:hover {
     background-color: #404BBF;
+    border: none;
 }
 
 .exit-button:focus {
     background-color: #404BBF;
+    border: none;
 }
 
 .exit-button:hover .modal-icon {
+    fill: #ffffff;
+}
+
+.exit-button:focus .modal-icon {
     fill: #ffffff;
 }
 
@@ -749,7 +765,7 @@ svg {
     margin-right: 24px;
     margin-left: 24px;
     margin-top: 16px;
-    margin-bottom: 56px;
+    margin-bottom: 8px;
     width: 260px;
 }
 
@@ -766,30 +782,57 @@ svg {
 }
 
 .modal-label {
-    display: flex;
+    display: block;
     flex-direction: column;
-    gap: 8px;
+    margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
+    line-height: 1.17;
     line-height: 1.16667;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
 
-.input .modal-icon {
+.modal-icon-container {
+    position: relative;
+}
+
+.modal-input {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-input:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-icon-input {
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 34px;
+    top: 50%;
     left: 16px;
     width: 18px;
     height: 18px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.input {
-    position: relative;
+.modal-input:focus .modal-icon-input{
+    fill: #4D5AE5;
 }
+
 
 .modal-input:active {
     border: 1px solid #4D5AE5;
@@ -827,12 +870,6 @@ svg {
     color: #fff;
 }
 
-.modal-input {
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    width: 360px;
-    height: 40px;
-}
 
 .modal-textarea {
     border: 1px solid rgba(46, 47, 66, 0.4);
