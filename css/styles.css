@@ -612,6 +612,7 @@ svg {
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
+    height: 40px;
 }
 
 
@@ -651,7 +652,6 @@ svg {
 
 .footer-icon {
     margin-left: 16px;
-
 }
 
 
@@ -670,11 +670,12 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 72px 24px 24px 24px;
+    padding: 72px 24px 24px;
     padding-top: 72px;
-        padding-right: 24px;
-        padding-bottom: 24px;
-        padding-left: 24px;
-
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
     opacity: 0;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -694,6 +695,8 @@ svg {
     width: 408px;
     min-height: 584px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+    padding: 72px 24px 24px;
     padding-top: 72px;
     padding-right: 24px;
     padding-bottom: 24px;
@@ -753,12 +756,12 @@ svg {
 
 .modal-text {
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #2E2F42;
-        margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+    margin-bottom: 16px;
 }
 
 .input-container {
@@ -830,13 +833,12 @@ svg {
     height: 18px;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    display: none;
 }
 
-.modal-input:focus .modal-icon-input {
+.modal-input:focus~.modal-icon-input {
     fill: #4D5AE5;
 }
-
 
 .modal-button {
     display: block;
@@ -868,7 +870,7 @@ svg {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-     color: rgba(46, 47, 66, 0.4);
+    color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
     padding: 8px 16px;
     outline: transparent;
@@ -906,7 +908,7 @@ svg {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:checked .modal-icon-input{
+.modal-input:checked~.modal-icon-input {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
