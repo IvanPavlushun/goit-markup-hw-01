@@ -690,8 +690,10 @@ svg {
     width: 408px;
     min-height: 584px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
-
+    padding-top: 72px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
     border-radius: 4px;
@@ -701,16 +703,6 @@ svg {
     overflow-y: auto;
 }
 
-
-.modal-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-    margin-bottom: 16px;
-}
 
 .exit-button .modal-icon {
     fill: #2e2f42;
@@ -788,7 +780,6 @@ svg {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
-    line-height: 1.16667;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
@@ -850,7 +841,7 @@ svg {
     padding: 16px 32px;
     border-radius: 4px;
     padding: 16px 32px;
-    min-width: 169px: 169px;
+    min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -863,8 +854,6 @@ svg {
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-button-text {}
 
 
 .modal-textarea {
@@ -912,7 +901,7 @@ svg {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type="checkbox"]:checked {
+input[type="checkbox"]:checked .modal-icon-input{
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
