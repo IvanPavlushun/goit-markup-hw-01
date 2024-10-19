@@ -915,13 +915,13 @@ input[type="checkbox"]:checked+.modal-label-checkbox .modal-checkbox-icon {
 
     /* Second section */
     .second-sec {
-
-        width: calc((100% - 24px) / 2);
         margin: 0 auto;
     }
 
     .second-sec-list {
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
@@ -1001,12 +1001,34 @@ input[type="checkbox"]:checked+.modal-label-checkbox .modal-checkbox-icon {
     }
 
     .project-conteiner {
-        width: 100%;
+       width: 100%;
     }
 
 
     /* Footer */
 
+    .footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .footer-container-form {
+        margin-left: 0;
+        align-items: flex-start;
+    }
+
+    .container-footer {
+        margin-right: 24px;
+        margin-bottom: 72px;
+    }
+
+    /* Overlay */
+
+.modal {
+    max-width: 408px;
+}
 
 }
 
@@ -1049,6 +1071,8 @@ input[type="checkbox"]:checked+.modal-label-checkbox .modal-checkbox-icon {
     .second-sec-list {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 100%;
     }
 
@@ -1132,6 +1156,51 @@ input[type="checkbox"]:checked+.modal-label-checkbox .modal-checkbox-icon {
     .project-conteiner {
         width: 100%;
     }
+
+    /* Footer */
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 72px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-footer {
+        margin-right: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-container-form {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .container-footer .logo {
+        margin: 16px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 0px;
+    }
+
+        /* Overlay */
+    
+        .modal {
+            max-width: 288px;
+        }
 
 }
 
