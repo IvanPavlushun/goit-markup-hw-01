@@ -177,6 +177,17 @@ a {
         margin-left: auto;
     }
 
+    .header-nav {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        padding: 24px 0;
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
     .header-nav-current {
         font-weight: 500;
         font-size: 16px;
@@ -308,8 +319,6 @@ a {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 72px;
     padding-bottom: 40px;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-    background: #fcfcfc;
     border-radius: 4px;
     width: 100%;
     height: 100%;
@@ -359,13 +368,16 @@ a {
     fill: #ffffff;
 }
 
-.mobile-menu-nav {
+.mobile-nav-list {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     gap: 40px;
-    margin-left: 16px;
+
+}
+
+.mobile-menu-nav {
     margin-bottom: auto;
 }
 
@@ -413,7 +425,6 @@ a {
 
 .mobile-data {
     display: block;
-    margin-left: 16px;
     margin-bottom: 48px;
 }
 
@@ -509,7 +520,7 @@ a {
     background-position: center center;
     background-size: cover;
     color: #fff;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Offpeop.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Offpeopmob.jpg);
     max-width: 320px;
     margin: 0 auto;
 
@@ -565,6 +576,12 @@ a {
     align-items: center;
 }
 
+@media (min-resolution: 192dpi) {
+    .first-sec {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Offpeopmob2x.jpg);
+    }
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -575,7 +592,7 @@ a {
         background-position: center center;
         background-size: cover;
         color: #fff;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Offpeop.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Offpeoptab.jpg);
         max-width: 768px;
         margin: 0 auto;
 
@@ -595,6 +612,12 @@ a {
         margin-bottom: 36px;
     }
 
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+    .first-sec {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Offpeoptab2x.jpg);
+    }
 }
 
 
@@ -627,6 +650,12 @@ a {
         margin-bottom: 48px;
     }
 
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1158px) {
+    .first-sec {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Offpeop2x.jpg);
+    }
 }
 
 /* Second section  */
@@ -824,8 +853,11 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 0 12px;
     gap: 72px;
+}
+
+.team-container {
+    padding: 0 28px;
 }
 
 .worker-conteiner {
@@ -873,13 +905,16 @@ a {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        padding: 0 108px;
         gap: 24px;
         row-gap: 64px;
     }
 
     .third-sec-item {
         flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .team-container {
+        padding: 0 108px;
     }
 
 }
@@ -896,6 +931,9 @@ a {
         flex-basis: calc((100% - 72px) / 4);
     }
 
+    .team-container {
+        padding: 0 15px;
+    }
 }
 
 /* Fourth section */
@@ -1067,6 +1105,7 @@ a {
 .footer .logo {
     display: inline-block;
     margin-bottom: 16px;
+    padding: 0;
 }
 
 .footer .social-links .link {
@@ -1285,6 +1324,7 @@ a {
         display: flex;
         align-items: baseline;
         padding: 0 15px;
+        gap: 0;
     }
 
     .footer .logo {
@@ -1613,6 +1653,7 @@ a {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    flex-shrink: 0;
     line-height: 1.33333;
     text-decoration: underline;
     text-decoration-skip-ink: none;
